@@ -49,7 +49,7 @@ Dashed connections represent manual record coordination through **DEPO-2026-001*
   <br><sub>Priority, ownership, deadlines, and escalation instructions captured in the readiness tasks.</sub>
 </p>
 
-**Next enhancement:** deploy an operational [Service Cloud edition](https://www.salesforce.com/service/pricing/) with response milestones, queues, and escalation workflows appropriate to the selected license.
+**Next enhancement:** define SLA response and resolution targets, business hours, and escalation thresholds; track acknowledgement and service-restoration times against those targets.
 
 ### 2️⃣ Snipe-IT — Equipment Inventory & Checkout
 
@@ -67,7 +67,7 @@ Registered five assets and captured their checkout state, providing identifiable
   <br><sub>Asset tags, models, and checkout state preserved in the equipment register.</sub>
 </p>
 
-**Next enhancement:** maintain a persistent private inventory with [paid hosting](https://snipeitapp.com/pricing) for managed backups, upgrades, and support. Self-hosted software remains free.
+**Next enhancement:** add maintenance history and workstation hardening checks covering patch status, disk encryption, host firewall settings, and [Group Policy security baselines](https://learn.microsoft.com/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines).
 
 ### 3️⃣ 1Password — Credential Organization & Guest Access
 
@@ -78,7 +78,7 @@ Created the **DEPO-2026-001 — IT Operations** vault with AV console, test Wi-F
   <br><sub>Equipment-related credentials organized in a dedicated engagement vault.</sub>
 </p>
 
-**Next enhancement:** maintain Business access beyond the trial and configure permission reviews, verified offboarding, and [audit-log monitoring](https://support.1password.com/activity-log/).
+**Next enhancement:** verify least-privilege access, credential rotation, and offboarding. Extend Windows account administration with **Active Directory (AD) security groups** and [Windows LAPS](https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-scenarios-windows-server-active-directory) for local administrator password management.
 
 ### 4️⃣ Backblaze B2 — Record Storage & Verified Recovery
 
@@ -102,7 +102,7 @@ flowchart LR
   <br><sub>Recovery check returned <code>deposition-transcript.txt: OK</code>.</sub>
 </p>
 
-**Next enhancement:** configure scheduled backups and recurring restore checks; use [paid capacity](https://www.backblaze.com/cloud-storage/pricing) for larger archives. [Object Lock](https://www.backblaze.com/docs/cloud-storage-object-lock) adds retention protection without an additional feature charge.
+**Next enhancement:** schedule backups, define recovery point and recovery time objectives (**RPO/RTO**), measure restore times, and alert on failed backup or integrity checks.
 
 ### 5️⃣ QuickBooks — Engagement Billing
 
@@ -112,7 +112,7 @@ Created **invoice 1038**, placing **DEPO-2026-001** in the service description t
 |---|---:|---:|---:|
 | Room setup, connectivity validation, and technical support | 3 hours | $100 | **$300** |
 
-**Next enhancement:** add accountant collaboration and project profitability reporting with an appropriate [paid plan](https://quickbooks.intuit.com/online/), associating time and equipment costs with the engagement.
+**Next enhancement:** track support hours and equipment expenses by engagement reference, reconcile invoice lines against approved work, and report the cost of each engagement.
 
 ### 6️⃣ macOS Networking — Diagnostics & Readiness Assessment
 
@@ -146,7 +146,7 @@ The controlled DNS test affected one query without changing system settings. Low
   <br><sub>Recorded performance findings alongside the expected DNS failure and successful normal lookup.</sub>
 </p>
 
-**Next enhancement:** deploy the [proposed staff, guest, and AV VLAN design](network-tests/Network-Plan.md) on managed network equipment; verify guest isolation and audio, video, and screen sharing under load.
+**Next enhancement:** deploy the [proposed staff, guest, and AV VLAN design](network-tests/Network-Plan.md); verify **DHCP addressing, DNS resolution, firewall ACLs, and guest isolation**, then test conferencing under load.
 
 ---
 
@@ -160,15 +160,30 @@ The controlled DNS test affected one query without changing system settings. Low
 
 ## 💡 Skills Developed
 
-| Skill | Evidence in this project |
-|---|---|
-| **Service coordination** | Prioritized Salesforce case, task ownership, readiness deadlines, escalation instructions |
-| **Asset administration** | Equipment registration, asset tags, inventory consistency, checkout tracking |
-| **Credential administration** | Dedicated vault, guest provisioning, equipment-linked credential records |
-| **Backup and recovery** | Cloud uploads, file restoration, SHA-256 integrity verification |
-| **Network troubleshooting** | DNS comparison, packet-loss and latency analysis, performance reporting |
-| **Segmentation planning** | Proposed staff, guest, and AV network design |
-| **Operational documentation** | Shared references, saved diagnostic outputs, service invoice, readiness records |
+### 📋 Service Management & Documentation
+
+- [x] Prioritized support requests, assigned ownership, and documented readiness deadlines.
+- [x] Recorded escalation guidance and maintained engagement traceability.
+- [x] Prepared service invoice details and organized supporting evidence.
+
+### 💻 Equipment & Access Administration
+
+- [x] Registered equipment and tracked checkout state through unique asset tags.
+- [x] Organized equipment-related credentials in a dedicated vault.
+- [x] Provisioned guest vault access and linked credential records to assets.
+
+### 🌐 TCP/IP Networking & Troubleshooting
+
+- [x] Compared DNS resolver behavior and documented lookup results.
+- [x] Analyzed ICMP packet loss and round-trip latency.
+- [x] Measured upload/download capacity and responsiveness under load.
+- [x] Planned staff, guest, and AV VLAN segmentation.
+
+### ☁️ Backup, Recovery & Integrity
+
+- [x] Uploaded and organized recovery records in cloud storage.
+- [x] Restored the transcript and verified its SHA-256 checksum.
+- [x] Preserved diagnostic outputs and recovery evidence for review.
 
 ---
 
@@ -177,3 +192,9 @@ The controlled DNS test affected one query without changing system settings. Low
 - [Network design](network-tests/Network-Plan.md)
 - [Raw network diagnostic records](network-tests/)
 - [Back to my projects portfolio](https://github.com/SaberYasser/Profile)
+
+---
+
+## 🤝 README Contribution
+
+Codex assisted with drafting and refining this README, including its structure, wording, diagrams, and presentation of project evidence.
