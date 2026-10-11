@@ -146,7 +146,7 @@ The controlled DNS test affected one query without changing system settings. Low
   <br><sub>Recorded performance findings alongside the expected DNS failure and successful normal lookup.</sub>
 </p>
 
-**Next enhancement:** deploy the proposed staff, guest, and AV VLAN design on managed network equipment; verify guest isolation and audio, video, and screen sharing under load.
+**Next enhancement:** deploy the [proposed staff, guest, and AV VLAN design](network-tests/Network-Plan.md) on managed network equipment; verify guest isolation and audio, video, and screen sharing under load.
 
 ---
 
@@ -168,10 +168,12 @@ The controlled DNS test affected one query without changing system settings. Low
 | **Backup and recovery** | Cloud uploads, file restoration, SHA-256 integrity verification |
 | **Network troubleshooting** | DNS comparison, packet-loss and latency analysis, performance reporting |
 | **Segmentation planning** | Proposed staff, guest, and AV network design |
-| **Operational documentation** | Shared references, performance findings, service invoice, readiness records |
+| **Operational documentation** | Shared references, saved diagnostic outputs, service invoice, readiness records |
 
 ---
 
-## 📚 Portfolio
+## 📚 Supporting Files
 
+- [Network design](network-tests/Network-Plan.md)
+- [Raw network diagnostic records](network-tests/)
 - [Back to my projects portfolio](https://github.com/SaberYasser/Profile)

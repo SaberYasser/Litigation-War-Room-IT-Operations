@@ -1,0 +1,53 @@
+==== Verbose Results ====
+---
+Capacity:
+---
+   Uplink capacity: 74.969 Mbps
+      Accuracy: High
+      Uplink bytes transferred: 120.188 MB
+      Uplink Flow count: 16
+   Downlink capacity: 100.424 Mbps
+      Accuracy: High
+      Downlink bytes transferred: 175.052 MB
+      Downlink Flow count: 10
+---
+Latency:
+---
+   Idle Latency:
+      479 RPM (125.158 milliseconds)
+         Transport: 529 RPM (113.375 milliseconds)
+         Security: 410 RPM (146.250 milliseconds)
+         HTTP: 517 RPM (115.848 milliseconds)
+      Accuracy: High
+   Responsiveness: Low
+      113 RPM (528.296 milliseconds)
+         Transport: 185 RPM (323.543 milliseconds)
+         Security: 109 RPM (549.717 milliseconds)
+         HTTP: 148 RPM (404.717 milliseconds)
+         HTTP loaded: 68 RPM (873.440 milliseconds)
+      Accuracy: High
+---
+Protocols Used:
+---
+    HTTP/2: 100%
+---
+Transport-layer info:
+---
+    ECN Disabled: 100%, L4S Disabled: 100%
+---
+Other Info:
+---
+   Test Endpoint: usqas2-edge-fx-021.aaplimg.com
+   Interface: ipsec0
+   Start: 2026-10-11 11:47:23.923
+   End: 2026-10-11 11:47:42.108
+   Duration: 18.19s
+   Downlink Phase Length: 17.19s
+   Uplink Phase Length: 17.19s
+   OS Version: Version 27.0.1 (Build 26A434)
+
+==== SUMMARY ====
+Uplink capacity: 74.969 Mbps
+Downlink capacity: 100.424 Mbps
+Responsiveness: Low (528.296 milliseconds | 113 RPM)
+Idle Latency: 125.158 milliseconds | 479 RPM
